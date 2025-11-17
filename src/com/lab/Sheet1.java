@@ -12,23 +12,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Sheet1 {
 	public static void main(String[] args)throws InterruptedException {
-		/*ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disable-gpu");
-		options.addArguments("--no-sandbox");
-		options.addArguments("--disable-dev-shm-usage");
-		options.addArguments("--start-maximized");
-		// IMPORTANT: headless off
-		options.addArguments("--disable-blink-features=AutomationControlled");
-		WebDriver driver = new ChromeDriver(options);
-		driver.get("https://latogo.techsaga.live/");
-		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//*[@id=\"exampleModalCenter\"]/div/div/div/div/div/div/button")).click();
-		Thread.sleep(2000);*/
 		
 		ChromeOptions options = new ChromeOptions();
 		
-		
-		//hello
         options.addArguments("--disable-blink-features=AutomationControlled");
         WebDriver driver = new ChromeDriver(options);
 
@@ -69,27 +55,7 @@ public class Sheet1 {
 		 * driver.findElement(By.xpath("//*[@id=\"createFrm\"]/div[8]/button")).click();
 		 */
     
-    //Login
-		
-	/*
-	 * driver.findElement(By.xpath(
-	 * "/html/body/div[2]/header/div/nav/div/ul[2]/li[1]/a")).click();
-	 * driver.findElement(By.xpath(
-	 * "/html/body/div/div[2]/div/div[2]/div/div[2]/form/div[1]/input")).sendKeys(
-	 * "rimjhim098@yopmail.com");
-	 * driver.findElement(By.id("password")).sendKeys("Rimjhim@12345");
-	 * JavascriptExecutor js = (JavascriptExecutor) driver;
-	 * js.executeScript("window.scrollBy(0, 500)"); Thread.sleep(2000);
-	 * driver.findElement(By.xpath(
-	 * "/html/body/div/div[2]/div/div[2]/div/div[2]/form/div[4]/button")).click();
-	 * driver.findElement(By.id("country_id")).click();
-	 * driver.findElement(By.xpath("//*[@id=\"country_id\"]/option[102]")).click();
-	 * driver.findElement(By.id("timezone_id")).click();
-	 * driver.findElement(By.xpath("//*[@id=\"timezone_id\"]/option[2]")).click();
-	 * Thread.sleep(2000); driver.findElement(By.xpath(
-	 * "//*[@id=\"exampleModalCenter\"]/div/div/div[3]/button")).click();
-	 */
-		
+  
 		// Login
      // LOGIN BUTTON CLICK
         wait.until(ExpectedConditions.elementToBeClickable(
