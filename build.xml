@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SaucLabsProject" default="run" basedir=".">
+
+    <!-- clean previous builds -->
+    <target name="clean">
+        <delete dir="build" />
+    </target>
+
+    <!-- compile -->
+    <target name="compile">
+        <mkdir dir="build/classes" />
+    	<javac srcdir="src" destdir="build/classes" includeantruntime="false" debug="true">
+
+            <classpath>
+                <pathelement location="build/classes" />
+                <fileset dir="lib">
+                    <include name="**/*.jar" />
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+
+    <!-- run -->
+    <target name="run" depends="compile">
+        <java classname="com.lab.Sheet1" fork="true">
+            <classpath>
+                <pathelement location="build/classes" />
+                <fileset dir="lib">
+                    <include name="**/*.jar" />
+                </fileset>
+            </classpath>
+        </java>
+    </target>
+
+</project>
